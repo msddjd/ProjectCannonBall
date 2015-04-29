@@ -17,7 +17,7 @@ public class MainActivity extends ActionBarActivity {
     Button cmtBtn;
     TextView cmtPrmpt;
     boolean[]viewed=new boolean[5];
-    boolean[]liked=new boolean[5];
+    int[]liked=new int[5];
     private int spot_id=1;
     private boolean[]allViewed={true,true,true,true,true};
 
@@ -34,7 +34,7 @@ public class MainActivity extends ActionBarActivity {
             cmtBtn.setEnabled(false);
             Intent commentIntent=new Intent(this,CommentActivity.class);
             Bundle cmtBndl=new Bundle();
-            cmtBndl.putBooleanArray("likedKey",liked);
+            cmtBndl.putIntArray("likedKey",liked);
             commentIntent.putExtras(cmtBndl);
             startActivity(commentIntent);
         }
@@ -46,22 +46,27 @@ public class MainActivity extends ActionBarActivity {
                     spotBndl.putInt("spotKey", 1);
                     infoIntent.putExtras(spotBndl);
                     startActivityForResult(infoIntent, spot_id);
+                    break;
                 case R.id.spot2Btn:
                     spotBndl.putInt("spotKey",2);
                     infoIntent.putExtras(spotBndl);
                     startActivityForResult(infoIntent, spot_id);
+                    break;
                 case R.id.spot3Btn:
                     spotBndl.putInt("spotKey",3);
                     infoIntent.putExtras(spotBndl);
                     startActivityForResult(infoIntent, spot_id);
+                    break;
                 case R.id.spot4Btn:
                     spotBndl.putInt("spotKey",4);
                     infoIntent.putExtras(spotBndl);
                     startActivityForResult(infoIntent, spot_id);
+                    break;
                 case R.id.spot5Btn:
                     spotBndl.putInt("spotKey",5);
                     infoIntent.putExtras(spotBndl);
                     startActivityForResult(infoIntent, spot_id);
+                    break;
             }
         }
     }
@@ -70,7 +75,7 @@ public class MainActivity extends ActionBarActivity {
         if   (rcvdRsltId ==spot_id   ) {
             if (rcvdRsltCode == RESULT_OK)    {
                 viewed[rcvdData.getExtras().getInt("spotKey")]=true;
-                liked[rcvdData.getExtras().getInt("spotKey")]=rcvdData.getExtras().getBoolean("likedKey");
+                liked[rcvdData.getExtras().getInt("spotKey")]=rcvdData.getExtras().getInt("likedKey");
                 if (cmtBtn.getVisibility()==View.GONE&&Arrays.equals(viewed,allViewed)) {
                     cmtBtn.setVisibility(View.VISIBLE);
                     cmtPrmpt.setVisibility(View.VISIBLE);

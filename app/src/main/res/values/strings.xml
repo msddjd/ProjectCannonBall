@@ -9,4 +9,7 @@
     <string name="comment_btn">Comment</string>
     <string name="welcome">Welcome to The Cannonball App!\nThroughout the museum are numbered spots.  When you see one, please select the spot from the list below for information.</string>
     <string name="comment_prompt">If you enjoyed the app, please tell us and share the spots you liked by pressing the button below to navigate to the comment screen.</string>
+    <string name="like_prmpt">Was this spot interesting?</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
 </resources>
