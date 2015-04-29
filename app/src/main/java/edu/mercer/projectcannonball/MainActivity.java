@@ -1,39 +1,44 @@
 package edu.mercer.projectcannonball;
 
+import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
+import android.widget.TextView;
 
 
 public class MainActivity extends ActionBarActivity {
+    Button cmtBtn;
+    TextView cmtPrmpt;
+    boolean[]viewed=new boolean[5];
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        cmtBtn=(Button)findViewById(R.id.commentBtn);
+        cmtPrmpt=(TextView)findViewById(R.id.commentPrompt);
     }
 
+    protected void onBtnClick(View v) {
+        if (v.getId()==R.id.commentBtn) {
 
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_main, menu);
-        return true;
-    }
-
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
-        int id = item.getItemId();
-
-        //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
-            return true;
         }
-
-        return super.onOptionsItemSelected(item);
+        else {
+            Intent infoIntent=new Intent(this,InfoActivity.class);
+            Bundle spotBndl=new Bundle();
+            switch (v.getId()) {
+                case R.id.spot1Btn:
+                    spotBndl.putInt(getResources().getString(R.id.spotKey),1);
+                    infoIntent.putExtras(spotBndl);
+                case R.id.spot2Btn:
+                case R.id.spot3Btn:
+                case R.id.spot4Btn:
+                case R.id.spot5Btn:
+            }
+        }
     }
 }
