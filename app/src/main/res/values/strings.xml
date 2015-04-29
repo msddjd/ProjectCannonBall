@@ -1,6 +1,12 @@
 <resources>
-    <string name="app_name">ProjectCannonBall</string>
+    <string name="app_name">The Cannonball App</string>
 
-    <string name="hello_world">Hello world!</string>
-    <string name="action_settings">Settings</string>
+    <string name="spot1_btn">Spot 1</string>
+    <string name="spot2_btn">Spot 2</string>
+    <string name="spot3_btn">Spot 3</string>
+    <string name="spot4_btn">Spot 4</string>
+    <string name="spot5_btn">Spot 5</string>
+    <string name="comment_btn">Comment</string>
+    <string name="welcome">Welcome to The Cannonball App!\nThroughout the museum are numbered spots.  When you see one, please select the spot from the list below for information.</string>
+    <string name="comment_prompt">If you enjoyed the app, please tell us and share the spots you liked by pressing the button below to navigate to the comment screen.</string>
 </resources>
