@@ -14,10 +14,10 @@ import java.util.Arrays;
 public class MainActivity extends ActionBarActivity {
     Button cmtBtn;
     TextView cmtPrmpt;
-    boolean[]viewed=new boolean[5];
-    int[]liked=new int[5];
+    boolean[]viewed=new boolean[9];
+    int[]liked=new int[9];
     private int spot_id=1;
-    private boolean[]allViewed={true,true,true,true,true};
+    private boolean[]allViewed={true,true,true,true,true,true,true,true,true};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -62,6 +62,26 @@ public class MainActivity extends ActionBarActivity {
                     break;
                 case R.id.spot5Btn:
                     spotBndl.putInt("spotKey",5);
+                    infoIntent.putExtras(spotBndl);
+                    startActivityForResult(infoIntent, spot_id);
+                    break;
+                case R.id.spot6Btn:
+                    spotBndl.putInt("spotKey",6);
+                    infoIntent.putExtras(spotBndl);
+                    startActivityForResult(infoIntent, spot_id);
+                    break;
+                case R.id.spot7Btn:
+                    spotBndl.putInt("spotKey",7);
+                    infoIntent.putExtras(spotBndl);
+                    startActivityForResult(infoIntent, spot_id);
+                    break;
+                case R.id.spot8Btn:
+                    spotBndl.putInt("spotKey",8);
+                    infoIntent.putExtras(spotBndl);
+                    startActivityForResult(infoIntent, spot_id);
+                    break;
+                case R.id.spot9Btn:
+                    spotBndl.putInt("spotKey",9);
                     infoIntent.putExtras(spotBndl);
                     startActivityForResult(infoIntent, spot_id);
                     break;

@@ -2,11 +2,15 @@
     <string name="app_name">The Cannonball App</string>
     <string name="action_settings">Action Settings</string>
 
-    <string name="spot1_btn">Spot 1</string>
-    <string name="spot2_btn">Spot 2</string>
-    <string name="spot3_btn">Spot 3</string>
-    <string name="spot4_btn">Spot 4</string>
-    <string name="spot5_btn">Spot 5</string>
+    <string name="spot1_btn">Spot 1. History</string>
+    <string name="spot2_btn">Spot 2. Front Hall</string>
+    <string name="spot3_btn">Spot 3. Stair Landing</string>
+    <string name="spot4_btn">Spot 4. Main Landing</string>
+    <string name="spot5_btn">Spot 5. Front Bedroom</string>
+    <string name="spot6_btn">Spot 6. Back Bedroom</string>
+    <string name="spot7_btn">Spot 7. Sleeping Porch</string>
+    <string name="spot8_btn">Spot 8. Dining Room</string>
+    <string name="spot9_btn">Spot 9. Kitchen Structure</string>
     <string name="comment_btn">Comment</string>
     <string name="welcome">Welcome to The Cannonball App!\nThroughout the museum are numbered spots.  When you see one, please select it from the list below for information.</string>
     <string name="comment_prompt">If you enjoyed the app, please give your thoughts and suggestions and share the spots you liked by pressing the button below to navigate to the comment screen.</string>

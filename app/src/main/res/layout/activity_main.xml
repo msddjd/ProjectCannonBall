@@ -50,6 +50,38 @@
         android:onClick= "onBtnClick"
         />
 
+    <Button
+        android:id="@+id/spot6Btn"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:text="@string/spot6_btn"
+        android:onClick= "onBtnClick"
+        />
+
+    <Button
+        android:id="@+id/spot7Btn"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:text="@string/spot7_btn"
+        android:onClick= "onBtnClick"
+        />
+
+    <Button
+        android:id="@+id/spot8Btn"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:text="@string/spot8_btn"
+        android:onClick= "onBtnClick"
+        />
+
+    <Button
+        android:id="@+id/spot9Btn"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:text="@string/spot9_btn"
+        android:onClick= "onBtnClick"
+        />
+
     <TextView
         android:id="@+id/commentPrompt"
         android:text="@string/comment_prompt"
