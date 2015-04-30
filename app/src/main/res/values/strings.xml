@@ -23,4 +23,10 @@
     <string name="liked">Liked:</string>
     <string name="disliked">Disliked:</string>
     <string name="comments">Comments:</string>
+    <string name="rate_dialogue_title">Rate this app:</string>
+    <string name="rate_dialogue_message">Do you like The Cannonball App? Please rate us on the appstore.</string>
+    <string name="rate_dialogue_positive">Rate now</string>
+    <string name="rate_dialogue_negative">No thanks</string>
+    <string name="rate_dialogue_pos_toast_msg">Thank You!!!</string>
+    <string name="rate_dialogue_neg_toast_msg">Ok!</string>
 </resources>

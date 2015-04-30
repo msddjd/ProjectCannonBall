@@ -1,13 +1,11 @@
 package edu.mercer.projectcannonball;
 
-import android.content.Intent;
+
 import android.os.AsyncTask;
 import android.os.Bundle;
-import android.support.v7.app.ActionBarActivity;
 import android.view.View;
-import android.widget.Button;
 import android.widget.EditText;
-import android.widget.TextView;
+
 
 import org.apache.http.NameValuePair;
 import org.apache.http.client.ClientProtocolException;
@@ -21,7 +19,9 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
-public class CommentActivity extends ActionBarActivity{
+import android.support.v4.app.FragmentActivity;
+
+public class CommentActivity extends FragmentActivity{
     EditText cmtTxt;
     String webData;
 
@@ -61,7 +61,9 @@ public class CommentActivity extends ActionBarActivity{
         webData=webData+cmtTxt.getText().toString()+"<br></br><br></br>--------------<br></br><br></br></body>";
         String[]webArray={webData};
         new UserUploadTask().execute(webArray);
-        finish();
+        RateAppAlertDialogFragment rateDiag = new RateAppAlertDialogFragment();
+        rateDiag.show(getSupportFragmentManager(),"alertDialogFragmentTag");
+        //finish();
     }
 
     private class UserUploadTask extends AsyncTask<String,Void,Void> {
