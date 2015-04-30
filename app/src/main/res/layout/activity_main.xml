@@ -2,101 +2,111 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent">
-
-    <TextView
-        android:text="@string/welcome"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:gravity="center" />
-    
-    <Button
-        android:id="@+id/spot1Btn"
-        android:layout_height="wrap_content"
+    <ScrollView
         android:layout_width="fill_parent"
-        android:text="@string/spot1_btn"
-        android:onClick= "onBtnClick"
-        />
+        android:layout_height="wrap_content">
 
-    <Button
-        android:id="@+id/spot2Btn"
-        android:layout_height="wrap_content"
-        android:layout_width="fill_parent"
-        android:text="@string/spot2_btn"
-        android:onClick= "onBtnClick"
-        />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
 
-    <Button
-        android:id="@+id/spot3Btn"
-        android:layout_height="wrap_content"
-        android:layout_width="fill_parent"
-        android:text="@string/spot3_btn"
-        android:onClick= "onBtnClick"
-        />
+            <TextView
+                android:text="@string/welcome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center" />
 
-    <Button
-        android:id="@+id/spot4Btn"
-        android:layout_height="wrap_content"
-        android:layout_width="fill_parent"
-        android:text="@string/spot4_btn"
-        android:onClick= "onBtnClick"
-        />
+            <Button
+                android:id="@+id/spot1Btn"
+                android:layout_height="wrap_content"
+                android:layout_width="fill_parent"
+                android:text="@string/spot1_btn"
+                android:onClick= "onBtnClick"
+                />
 
-    <Button
-        android:id="@+id/spot5Btn"
-        android:layout_height="wrap_content"
-        android:layout_width="fill_parent"
-        android:text="@string/spot5_btn"
-        android:onClick= "onBtnClick"
-        />
+            <Button
+                android:id="@+id/spot2Btn"
+                android:layout_height="wrap_content"
+                android:layout_width="fill_parent"
+                android:text="@string/spot2_btn"
+                android:onClick= "onBtnClick"
+                />
 
-    <Button
-        android:id="@+id/spot6Btn"
-        android:layout_height="wrap_content"
-        android:layout_width="fill_parent"
-        android:text="@string/spot6_btn"
-        android:onClick= "onBtnClick"
-        />
+            <Button
+                android:id="@+id/spot3Btn"
+                android:layout_height="wrap_content"
+                android:layout_width="fill_parent"
+                android:text="@string/spot3_btn"
+                android:onClick= "onBtnClick"
+                />
 
-    <Button
-        android:id="@+id/spot7Btn"
-        android:layout_height="wrap_content"
-        android:layout_width="fill_parent"
-        android:text="@string/spot7_btn"
-        android:onClick= "onBtnClick"
-        />
+            <Button
+                android:id="@+id/spot4Btn"
+                android:layout_height="wrap_content"
+                android:layout_width="fill_parent"
+                android:text="@string/spot4_btn"
+                android:onClick= "onBtnClick"
+                />
 
-    <Button
-        android:id="@+id/spot8Btn"
-        android:layout_height="wrap_content"
-        android:layout_width="fill_parent"
-        android:text="@string/spot8_btn"
-        android:onClick= "onBtnClick"
-        />
+            <Button
+                android:id="@+id/spot5Btn"
+                android:layout_height="wrap_content"
+                android:layout_width="fill_parent"
+                android:text="@string/spot5_btn"
+                android:onClick= "onBtnClick"
+                />
 
-    <Button
-        android:id="@+id/spot9Btn"
-        android:layout_height="wrap_content"
-        android:layout_width="fill_parent"
-        android:text="@string/spot9_btn"
-        android:onClick= "onBtnClick"
-        />
+            <Button
+                android:id="@+id/spot6Btn"
+                android:layout_height="wrap_content"
+                android:layout_width="fill_parent"
+                android:text="@string/spot6_btn"
+                android:onClick= "onBtnClick"
+                />
 
-    <TextView
-        android:id="@+id/commentPrompt"
-        android:text="@string/comment_prompt"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:gravity="center"
-        android:visibility="gone"/>
+            <Button
+                android:id="@+id/spot7Btn"
+                android:layout_height="wrap_content"
+                android:layout_width="fill_parent"
+                android:text="@string/spot7_btn"
+                android:onClick= "onBtnClick"
+                />
 
-    <Button
-        android:id="@+id/commentBtn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/comment_btn"
-        android:layout_gravity="center"
-        android:visibility="gone"
-        android:onClick= "onBtnClick"/>
+            <Button
+                android:id="@+id/spot8Btn"
+                android:layout_height="wrap_content"
+                android:layout_width="fill_parent"
+                android:text="@string/spot8_btn"
+                android:onClick= "onBtnClick"
+                />
+
+            <Button
+                android:id="@+id/spot9Btn"
+                android:layout_height="wrap_content"
+                android:layout_width="fill_parent"
+                android:text="@string/spot9_btn"
+                android:onClick= "onBtnClick"
+                />
+
+            <TextView
+                android:id="@+id/commentPrompt"
+                android:text="@string/comment_prompt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:visibility="gone"/>
+
+            <Button
+                android:id="@+id/commentBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/comment_btn"
+                android:layout_gravity="center"
+                android:visibility="gone"
+                android:onClick= "onBtnClick"/>
+        </LinearLayout>
+    </ScrollView>
 </LinearLayout>
