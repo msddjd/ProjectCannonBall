@@ -1,5 +1,6 @@
 <resources>
     <string name="app_name">The Cannonball App</string>
+    <string name="action_settings">Action Settings</string>
 
     <string name="spot1_btn">Spot 1</string>
     <string name="spot2_btn">Spot 2</string>
@@ -7,9 +8,15 @@
     <string name="spot4_btn">Spot 4</string>
     <string name="spot5_btn">Spot 5</string>
     <string name="comment_btn">Comment</string>
-    <string name="welcome">Welcome to The Cannonball App!\nThroughout the museum are numbered spots.  When you see one, please select the spot from the list below for information.</string>
-    <string name="comment_prompt">If you enjoyed the app, please tell us and share the spots you liked by pressing the button below to navigate to the comment screen.</string>
+    <string name="welcome">Welcome to The Cannonball App!\nThroughout the museum are numbered spots.  When you see one, please select it from the list below for information.</string>
+    <string name="comment_prompt">If you enjoyed the app, please give your thoughts and suggestions and share the spots you liked by pressing the button below to navigate to the comment screen.</string>
     <string name="like_prmpt">Was this spot interesting?</string>
     <string name="yes">Yes</string>
     <string name="no">No</string>
+    <string name="comment_hint">Please enter your comments here</string>
+    <string name="comment_txt">Thank you for taking the time to submit your comments and preferences.</string>
+    <string name="submit">Submit</string>
+    <string name="liked">Liked:</string>
+    <string name="disliked">Disliked:</string>
+    <string name="comments">Comments:</string>
 </resources>

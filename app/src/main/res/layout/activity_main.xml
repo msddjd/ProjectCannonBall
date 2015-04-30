@@ -6,7 +6,9 @@
     <TextView
         android:text="@string/welcome"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center" />
     
     <Button
         android:id="@+id/spot1Btn"
@@ -53,6 +55,8 @@
         android:text="@string/comment_prompt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
         android:visibility="gone"/>
 
     <Button
@@ -60,6 +64,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/comment_btn"
+        android:layout_gravity="center"
         android:visibility="gone"
         android:onClick= "onBtnClick"/>
 </LinearLayout>

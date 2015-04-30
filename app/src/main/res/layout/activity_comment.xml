@@ -1,5 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent" android:layout_height="match_parent">
+    <EditText
+        android:id="@+id/commentBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:hint="@string/comment_hint"
+        android:minLines="1"
+        android:maxLines="10"/>
 
+    <TextView
+        android:layout_width="300dip"
+        android:layout_height="wrap_content"
+        android:text="@string/comment_txt"
+        android:gravity="center"
+        android:layout_above="@+id/commentBox"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/submitBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/submit"
+        android:onClick="onSubmit"
+        android:layout_below="@+id/commentBox"
+        android:layout_centerHorizontal="true"/>
 </RelativeLayout>

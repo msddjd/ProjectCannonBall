@@ -10,7 +10,7 @@ import android.widget.TextView;
 public class InfoActivity extends ActionBarActivity {
     TextView infoTxt;
     Button yesBtn, noBtn;
-    Bundle bndlFromMain=getIntent().getExtras();
+    Bundle bndlFromMain;
     int likeNum=0;
 
     @Override
@@ -20,28 +20,32 @@ public class InfoActivity extends ActionBarActivity {
         infoTxt=(TextView)findViewById(R.id.info);
         yesBtn=(Button)findViewById(R.id.yesBtn);
         noBtn=(Button)findViewById(R.id.noBtn);
+        bndlFromMain=getIntent().getExtras();
         String[]titles=getResources().getStringArray(R.array.titles);
         String[]infos=getResources().getStringArray(R.array.infos);
-        setTitle(titles[bndlFromMain.getInt("spotKey")]);
-        infoTxt.setText(infos[bndlFromMain.getInt("spotKey")]);
+        setTitle(titles[bndlFromMain.getInt("spotKey")-1]);
+        infoTxt.setText(infos[bndlFromMain.getInt("spotKey")-1]);
     }
 
-    protected void onLike(View v) {
+
+
+    public void onLike(View v) {
         if (v==yesBtn) {
             likeNum=1;
             yesBtn.setEnabled(false);
             noBtn.setEnabled(true);
         }
 
-        else if (v.getId()==R.id.noBtn) {
+        else if (v==noBtn) {
             likeNum=-1;
             noBtn.setEnabled(false);
             yesBtn.setEnabled(true);
         }
     }
 
+
     @Override
-    protected void onStop() {
+    public void onBackPressed() {
         super.onStop();
         Intent mainActivity=new Intent();
         bndlFromMain.putInt("likedKey",likeNum);

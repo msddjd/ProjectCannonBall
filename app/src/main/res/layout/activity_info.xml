@@ -3,12 +3,8 @@
     android:layout_width="match_parent" android:layout_height="match_parent"
     android:fillViewport="true">
     <TableLayout
-        android:layout_width="fill_parent"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content">
-
-        <TableRow>
-            <TextView />
-        </TableRow>
 
         <TableRow>
             <TextView
@@ -19,27 +15,37 @@
         </TableRow>
 
         <TableRow>
+            <TextView />
+        </TableRow>
+
+        <TableRow
+            android:layout_gravity="center_horizontal">
             <TextView
                 android:text="@string/like_prmpt"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:gravity="center"
             />
         </TableRow>
 
-        <TableRow>
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
             <Button
                 android:id="@+id/yesBtn"
                 android:text="@string/yes"
-                android:layout_width="wrap_content"
+                android:layout_width="0dip"
                 android:layout_height="wrap_content"
+                android:layout_weight="1"
                 android:onClick="onLike"
             />
 
             <Button
                 android:id="@+id/noBtn"
                 android:text="@string/no"
-                android:layout_width="wrap_content"
+                android:layout_width="0dip"
                 android:layout_height="wrap_content"
+                android:layout_weight="1"
                 android:onClick="onLike"
             />
         </TableRow>
